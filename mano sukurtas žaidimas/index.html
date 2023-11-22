@@ -1,0 +1,236 @@
+<html>
+<title>
+cia nieko nerasi, eik zaist
+</title>
+<style>
+body {margin: 0; padding: 0}
+.fonas {background-color: #2457e3; width: 100%; height: 100%; margin: 0; padding:0; display: flex; align-items: start; justify-content: center; font-size: 0px; font-weight: 900; color: white;}
+.start {position: absolute; height: 10%; width: 15%; left: 45%; bottom: 0; background: transparent;}
+.finish {position: absolute; bottom: 55%; height: 10%; width: 10%; left: 85%; background: green; display: none;}
+.antraslvl {display: none;}
+.finish2 {position: absolute; height: 10%; width: 5%; left: 80%; bottom: 35%; background-color: green; display: none;}
+#tiltas {position: absolute; height: 10%; width: 55%; left: 25%; bottom: 35%; background-color: gold; display: none; ; border-radius: 0 0 0 5%}
+.stebuklas {position: absolute; height: 10%; width: 5%; left: 25%; bottom: 45%; background-color: white ; border-radius: 5% 0 0 5%}
+.treciaslvl {display: none;}
+.spastai1 {position: absolute; height: 10%; width: 5%; left: 35%; bottom: 85%; background-color: white}
+#spastai1 {position: absolute; height: 20%; width: 5%; left: 35%; bottom: 65%; background-color: white}
+.spastai2 {position: absolute; height: 10%; width: 5%; left: 55%; bottom: 45%; background-color: white}
+#spastai2 {position: absolute; height: 10%; width: 20%; left: 40%; bottom: 35%; background-color: gold; display: none;}
+#spastai22 {position: absolute; height: 40%; width: 5%; left: 35%; bottom: 35%; background-color: gold; display: none;}
+.spastai3 {position: absolute; height: 10%; width: 5%; left: 25%; bottom: 65%; background-color: white}
+#spastai3 {position: absolute; height: 20%; width: 5%; left: 25%; bottom: 35%; background-color: white}
+#spastai33 {position: absolute; height: 10%; width: 5%; left: 25%; bottom: 55%; background-color: white}
+.spastai33 {position: absolute; height: 60%; width: 5%; left: 20%; bottom: 5%; background-color: gold; display: none;}
+.spastai4 {position: absolute; height: 10%; width: 5%; left: 5%; bottom: 5%; background-color: white}
+#spastai4 {position: absolute; height: 10%; width: 5%; left: 10%; bottom: 5%; background-color: white}
+.finish3 {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 5%; background-color: green; display: none;}
+.ketvirtaslvl {display: none;}
+.pirms {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 15%; background-color: #fdc3c3;}
+.antrs {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 25%; background-color: #fdc3c3;}
+.trecis {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 35%; background-color: #fdc3c3;}
+.ketvirts {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 45%; background-color: #fdc3c3;}
+.penkts {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 55%; background-color: #fdc3c3;}
+.sests {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 65%; background-color: #fdc3c3;}
+.septints {position: absolute; height: 10%; width: 5%; left: 15%; bottom: 75%; background-color: white}
+.keliukas {position: absolute; height: 10%; width: 25%; left: 20%; bottom: 75%; background-color: white}
+.astunts {position: absolute; height: 10%; width: 5%; left: 45%; bottom: 75%; background-color: white}
+.devints {position: absolute; height: 10%; width: 5%; left: 50%; bottom: 75%; background-color: white; display: none;}
+.desimts {position: absolute; height: 10%; width: 5%; left: 40%; bottom: 65%; background-color: white}
+.vienuolikts {position: absolute; height: 10%; width: 5%; left: 40%; bottom: 65%; background-color: white}
+.dvylikts {display: none;}
+.dvylikts1 {position: absolute; height: 10%; width: 5%; left: 40%; bottom: 65%; background-color: #fdc3c3}
+.dvylikts2 {position: absolute; height: 10%; width: 5%; left: 40%; bottom: 75%; background-color: #fdc3c3}
+.dvylikts3 {position: absolute; height: 10%; width: 5%; left: 45%; bottom: 75%; background-color: #fdc3c3}
+.dvylikts4 {position: absolute; height: 10%; width: 5%; left: 50%; bottom: 75%; background-color: #fdc3c3}
+.randomyzas {background-color: #fdc3c3}
+.galiakas {position: absolute; height: 10%; width: 5%; left: 70%; bottom: 75%; background-color: green; display: none;}
+.laimejai {position: absolute; height: 100%; width: 100%; left: 0%; bottom: 0%; background-image: url("galas.jpg"); background-size: 100% 100%; text-align: center; display: none;}
+
+.fonas:hover {font-size: 50px;}
+.spagetis {display: none;}
+.start:hover ~ .spagetis {display: block;}
+.spagetis:hover {display:block;}
+.start:hover ~ .finish {display: block;}
+.spagetis:hover ~ .finish {display: block;}
+.finish:hover {display: block;}
+.finish:hover ~ .finish2 {display:block;}
+.fonas:hover ~ .start {background: green;}
+.finish:hover ~ .antraslvl {display: block;}
+.antraslvl:hover {display: block;}
+.stebuklas:hover ~ #tiltas {display: block;}
+#tiltas:hover {display:block;}
+.antraslvl:hover ~ .finish2 {display:block;}
+.finish2:hover {display:block;}
+.finish2:hover ~ .treciaslvl {display:block;}
+.finish2:hover ~ .finish3 {display: block;}
+.treciaslvl:hover {display: block;}
+.treciaslvl:hover ~ .finish3 {display: block;}
+.spastai1:hover ~ #spastai1 {display: none;}
+.spastai2:hover ~ #spastai2 {display: block;}
+.spastai2:hover ~ #spastai22 {display: block;}
+#spastai2:hover {display: block;}
+#spastai2:hover ~ #spastai22 {display: block;}
+#spastai22:hover {display:block;}
+.spastai3:hover ~ #spastai3 {display:none;}
+.spastai3:hover ~ #spastai33 {display: none;}
+.spastai4:hover ~ #spastai4 {display:none;}
+#spastai33:hover ~ .spastai33 {display: block;}
+.spastai33:hover {display: block;}
+.finish3:hover {display:block;}
+.finish3:hover ~ .ketvirtaslvl {display: block;}
+.ketvirtaslvl:hover {display:block;}
+.ketvirtaslvl:hover ~ .galiakas {display: block;}
+.finish3:hover ~ .galiakas {display:block;}
+
+.pirms:hover {visibility: hidden; background: red; transition: 200ms;}
+.antrs:hover {visibility: hidden; background: red; transition: 200ms;}
+.trecis:hover {visibility: hidden; background: red; transition: 200ms;}
+.ketvirts:hover {visibility: hidden; background: red; transition: 200ms;}
+.penkts:hover {visibility: hidden; background: red; transition: 200ms;}
+.sests:hover {visibility: hidden; background: red; transition: 200ms;}
+.sests:hover ~ .penkts{visibility: hidden;}
+.sests:hover ~ .ketvirts{visibility: hidden;}
+.sests:hover ~ .trecis{visibility: hidden;}
+.sests:hover ~ .antrs{visibility: hidden;}
+.sests:hover ~ .pirms{visibility: hidden;}
+.penkts:hover ~ .ketvirts{visibility: hidden;}
+.penkts:hover ~ .trecis{visibility: hidden;}
+.penkts:hover ~ .antrs{visibility: hidden;}
+.penkts:hover ~ .pirms{visibility: hidden;}
+.ketvirts:hover ~ .trecis{visibility: hidden;}
+.ketvirts:hover ~ .antrs{visibility: hidden;}
+.ketvirts:hover ~ .pirms{visibility: hidden;}
+.trecis:hover ~ .antrs{visibility: hidden;}
+.trecis:hover ~ .pirms{visibility: hidden;}
+.antrs:hover ~ .pirms{visibility: hidden;}
+.septints:hover ~ .sests{visibility: hidden;}
+.septints:hover ~ .penkts{visibility: hidden;}
+.septints:hover ~ .ketvirts{visibility: hidden;}
+.septints:hover ~ .trecis{visibility: hidden;}
+.septints:hover ~ .antrs{visibility: hidden;}
+.septints:hover ~ .pirms{visibility: hidden;}
+.astunts:hover ~ .devints{visibility: hidden;}
+.keliukas:hover ~ .devints{display: block;}
+.vienuolikts:hover {visibility: hidden; background: red; transition: 1000ms;}
+.desimts:hover ~ .dvylikts {display: block;}
+.dvylikts:hover {display: block;}
+.dvylikts1:hover {visibility: hidden; background: red; transition: 300ms;}
+.dvylikts2:hover {visibility: hidden; background: red; transition: 300ms;}
+.dvylikts3:hover {visibility: hidden; background: red; transition: 300ms;}
+.dvylikts4:hover {visibility: hidden; background: red; transition: 300ms;}
+.dvylikts4:hover ~ .dvylikts3{visibility: hidden;}
+.dvylikts4:hover ~ .dvylikts2{visibility: hidden;}
+.dvylikts4:hover ~ .dvylikts1{visibility: hidden;}
+.dvylikts3:hover ~ .dvylikts2{visibility: hidden;}
+.dvylikts3:hover ~ .dvylikts1{visibility: hidden;}
+.dvylikts2:hover ~ .dvylikts1{visibility: hidden;}
+.dvylikts:hover ~ .desimts{visibility: hidden;}
+.randomyzas:hover {visibility: hidden; background: red; transition: 1000ms;}
+.galiakas:hover ~ .laimejai {display: block}
+.laimejai:hover {display:block;}
+
+</style>
+<body>
+
+   <div class="fonas">
+   	Pabandyk, lazars kad negazdinsiu
+</div>
+
+<div class="start"></div>
+
+<div class="spagetis">
+<div style="position: absolute; height: 10%; width: 15%; left: 45%; bottom: 0; background: white;"></div>
+<div style="position: absolute; height: 30%; width: 5%; left: 50%; bottom: 10%; background: white"></div>
+<div style="position: absolute; height: 5%; width: 30%; bottom: 40%; left: 25%; background: white"></div>
+<div style="position: absolute; bottom: 45%; height: 40%; width: 5%; left: 25%; background: white"></div>
+<div style="position: absolute; bottom: 85%; height: 10%; width: 60%; left: 25%; background: white"></div>
+<div style="position: absolute; bottom: 65%; height: 30%; width: 5%; left: 85%; background: white"></div>
+</div>
+
+<div class="finish"></div>
+
+<div class="antraslvl">
+<div style="position: absolute; height: 50%; width: 5%; left: 90%; bottom: 5%; background: white; border-radius: 5% 5% 5% 0"></div>
+<div style="position: absolute; height: 10%; width: 15%; left: 75%; bottom: 5%; background: white;"></div>
+<div style="position: absolute; height: 90%; width: 5%; left: 70%; bottom: 5%; background: white; border-radius: 0 5% 0 5%"></div>
+<div style="position: absolute; height: 10%; width: 65%; left: 5%; bottom: 85%; background: white; border-radius: 5% 0 0 0"></div>
+<div style="position: absolute; height: 80%; width: 5%; left: 5%; bottom: 5%; background: white;  border-radius: 0 0 0 5%"></div>
+<div style="position: absolute; height: 10%; width: 55%; left: 10%; bottom: 5%; background-color: white; border-radius: 0 0 5% 0"></div>
+<div style="position: absolute; height: 60%; width: 5%; left: 60%; bottom: 15%; background-color: white; border-radius: 0 5% 0 0"></div>
+<div style="position: absolute; height: 10%; width: 45%; left: 15%; bottom: 65%; background-color: white; border-radius: 5% 0 0 0"></div>
+<div style="position: absolute; height: 40%; width: 5%; left: 15%; bottom: 25%; background-color: white; border-radius: 0 0 0 5%"></div>
+<div style="position: absolute; height: 10%; width: 35%; left: 20%; bottom: 25%; background-color: white ; border-radius: 0 0 5% 0"></div>
+<div style="position: absolute; height: 10%; width: 5%; left: 50%; bottom: 35%; background-color: white"></div>
+<div style="position: absolute; height: 10%; width: 5%; left: 50%; bottom: 45%; background-color: white; border-radius: 0 5% 0 0"></div>
+<div style="position: absolute; height: 10%; width: 20%; left: 30%; bottom: 45%; background-color: white;"></div>
+<div class="stebuklas"></div>
+<div id="tiltas"></div>
+</div>
+
+<div class="finish2"></div>
+
+<div class="treciaslvl">
+<div style="position: absolute; height: 10%; width: 10%; left: 70%; bottom: 35%; background-color: white"></div>
+<div style="position: absolute; height: 10%; width: 10%; left: 65%; bottom: 15%; background-color: white"></div>
+<div style="position: absolute; height: 70%; width: 5%; left: 65%; bottom: 25%; background-color: white"></div>
+<div style="position: absolute; height: 10%; width: 25%; left: 40%; bottom: 85%; background-color: white"></div>
+<div style="position: absolute; height: 10%; width: 5%; left: 30%; bottom: 65%; background-color: white"></div>
+<div class="spastai1"></div>
+<div id="spastai1"></div>
+<div style="position: absolute; height: 10%; width: 10%; left: 55%; bottom: 55%; background-color: white"></div>
+<div class="spastai2"></div>
+<div id="spastai2"></div>
+<div id="spastai22"></div>
+<div class="spastai3"></div>
+<div id="spastai3"></div>
+<div id="spastai33"></div>
+<div style="position: absolute; height: 10%; width: 5%; left: 25%; bottom: 75%; background-color: white"></div>
+<div style="position: absolute; height: 10%; width: 20%; left: 10%; bottom: 85%; background-color: white"></div>
+<div style="position: absolute; height: 50%; width: 5%; left: 10%; bottom: 35%; background-color: white"></div>
+<div style="position: absolute; height: 10%; width: 25%; left: 5%; bottom: 25%; background-color: white"></div>
+<div style="position: absolute; height: 10%; width: 5%; left: 5%; bottom: 15%; background-color: white"></div>
+<div class="spastai4"></div>
+<div id="spastai4"></div>
+<div class="spastai33"></div>
+</div>
+
+<div class="finish3"></div>
+
+<div class="ketvirtaslvl">
+
+<div class="septints"></div>
+<div class="sests"></div>
+<div class="penkts"></div>
+<div class="ketvirts"></div>
+<div class="trecis"></div>
+<div class="antrs"></div>
+<div class="pirms"></div>
+<div class="keliukas"></div>
+<div class="astunts"></div>
+<div class="devints"></div>
+<div class="desimts"></div>
+
+<div style="position: absolute; height: 10%; width: 5%; left: 20%; bottom: 85%;" class="randomyzas"></div>
+<div style="position: absolute; height: 10%; width: 5%; left: 35%; bottom: 85%;" class="randomyzas"></div>
+<div style="position: absolute; height: 10%; width: 5%; left: 25%; bottom: 65%;" class="randomyzas"></div>
+<div style="position: absolute; height: 10%; width: 15%; left: 55%; bottom: 75%; background-color: white"></div>
+<div class="vienuolikts"></div>
+
+<div class="dvylikts" id="dvylikts">
+<div class="dvylikts4"></div>
+<div class="dvylikts3"></div>
+<div class="dvylikts2"></div>
+<div class="dvylikts1"></div>
+</div>
+
+</div>
+<div class="galiakas"></div>
+<div class="laimejai"><h1 style="color: white; padding-top: 20%">Nelabai apsimokejo, nu bet typo sveikinu, laimejai</h1></div>
+
+
+
+
+
+
+</body>
+</html>
